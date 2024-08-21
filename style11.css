@@ -1,0 +1,339 @@
+body{
+    font-family: sans-serif;
+}
+
+.post-list{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.post-img-1{
+    background: url(https://todosobrefrutas.com/wp-content/uploads/2021/03/naranja-que-para-que-sirve.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-2{
+    background: url(https://natursan.net/wp-content/naranjas-2.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-3{
+    background: url(https://cdn-naturaleza.animalesbiologia.com/wp-content/uploads/2017/10/naranjo.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+
+.post-img-4{
+    background: url(https://th.bing.com/th/id/R.7156ba3ea993779b1301fb6312ec17be?rik=1Vp574fy9NaNvg&riu=http%3a%2f%2fvalenciabonita.es%2fwp-content%2fuploads%2f2016%2f02%2fnovedades-primavera-2015-naranjas-online1.jpg&ehk=IAY4QWbwTi10a%2bi3zHgIKDv6TR56yYC4LpWLOEo7n7A%3d&risl=&pid=ImgRaw&r=0);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-5{
+    background: url(https://i5.walmartimages.com.mx/gr/images/product-images/img_large/00000000003107L.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post-img-6{
+    background: url(https://th.bing.com/th/id/OIP.Uo2PsHLlHagKYVwrqJyBZwHaE8?rs=1&pid=ImgDetMain);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
+}
+
+.post:hover .post-img-4,
+.post:hover .post-img-5,
+.post:hover .post-img-6,{
+    transform: scale(1.1);
+}
+
+
+
+
+.post{
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .1);
+    transition: .2s;
+}
+
+.post:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 1px 14px 2px rgba(0, 0, 0, .15);
+}
+
+.post-header{
+    width: 100%;
+    height: 200px;
+    cursor: pointer;
+}
+
+.post:hover .post-img-1,
+.post:hover .post-img-2,
+.post:hover .post-img-3,{
+    transform: scale(1.1);
+}
+
+.post-body{
+    padding: 15px;
+    text-align: center;
+}
+
+.post-body span{
+    display: inline-block;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.post-body h2{
+    margin-bottom: 15px;
+}
+
+.post-body p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.post-body .post-link{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background: #b45f0e;
+    color: #fff;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .1);
+    transition: .2s;
+}
+
+.post-body .post-link:hover{
+    background: #b48715;
+    box-shadow: 1px 2px 6px 1px rgba(0, 0, 0, .2);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 840px){
+    .content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px){
+    .content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* Estilos para el formulario */
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: relative;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e27a0b;
+    color: rgb(85, 42, 4);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container button:hover {
+    background-color: #ffffff;
+}
+
+
+
+/* Estilos para la página de historia */
+body.historia {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1.historia {
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ff6600;
+}
+
+section img {
+    width: 300%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section p {
+    font-size: 1.1em;
+    margin: 0;
+    padding: 0;
+}
+
+    
+
+
+/* Contenedor de productos */
+.products {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 15px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilos para cada producto */
+.product {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: calc(33.333% - 20px); /* Ajuste de ancho para 3 columnas */
+    max-width: 300px;
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.2s;
+}
+
+.product h2 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+}
+
+.product p {
+    color: #666;
+    margin: 10px 15px;
+    text-align: center;
+}
+
+.product button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 100%;
+    margin: 15px 0;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.product button:hover {
+    background-color: #e65c00;
+    transform: translateY(-2px);
+}
+
+/* Efecto de hover en el producto */
+.product:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1px 14px rgba(0, 0, 0, 0.15);
+}
+
+.product:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsividad */
+@media (max-width: 840px) {
+    .product {
+        width: calc(50% - 20px); /* Ajuste de ancho para 2 columnas */
+    }
+}
+
+@media (max-width: 600px) {
+    .product {
+        width: calc(100% - 20px); /* Ajuste de ancho para 1 columna */
+    }
+}
+
+
+
+

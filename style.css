@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.header_image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.titulo {
+    color: rgb(176, 74, 7);
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.header_nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header_nav_item {
+    padding: 5px;
+    border-radius: 2px;
+    background-color: rgb(222, 137, 72);
+    margin-left: 5px;
+}
+
+.header_nav_item a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.header_nav_item a:hover {
+    color: orange;
+}
+
+.carousel {
+    position: relative;
+    max-width: 500px;
+    margin: 40px auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: opacity 0.6s ease;
+    position: relative; /* Para posicionar el botón "Leer más" */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item-next,
+.carousel-item-prev {
+    opacity: 0;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 1000;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.carousel-control:hover {
+    opacity: 1;
+}
+
+
+/* Código para animar el botón de leer más */
+.read-more {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ba7a20;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #672210;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(205, 113, 64);
+}
+
+
+
+
+
+
+
