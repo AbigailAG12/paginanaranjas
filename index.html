@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ofrecer educación superior">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Las naranjas</title>
+</head>
+<body>
+    <!-- encabezado  -->
+    <header class="header_container">
+        <!-- Imagen en el encabezado -->
+        <img src="./img/OIP.png" alt="Logo" class="header_image">
+        <!-- Título de la página web -->
+        <h1 class="titulo">Las naranjas</h1>
+        <!-- Se va a establecer el menú -->
+        <nav>
+            <!-- vamos a ocupar una lista con viñetas -->
+            <ul class="header_nav">
+                <!-- Establecer las opciones (items) -->
+                <li class="header_nav_item"><a href="#">Inicio</a></li>
+                <li class="header_nav_item"><a href="./Historia.html">Historia</a></li>
+                <li class="header_nav_item"><a href="./formulario1.html">Formulario</a></li>
+                <li class="header_nav_item"><a href="./productos.html">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Sección del carrusel -->
+<section class="carousel"> 
+    <!-- Contenedor principal del carrusel con la clase 'carousel' -->
+    
+    <!-- Contenedor interno del carrusel -->
+    <figure class="carousel-inner"> 
+        <!-- Usa la etiqueta <figure> para contener los ítems del carrusel -->
+        
+        <!-- Primer ítem del carrusel -->
+        <figure class="carousel-item active"> 
+            <!-- Cada ítem del carrusel es un <figure> con la clase 'carousel-item'. 
+                 El primer ítem tiene además la clase 'active' para hacerlo visible inicialmente -->
+            <img src="./img/image1.jpg" alt="Imagen 1">             
+            <a href="pagina1.html" class="read-more">Leer más</a>
+            <!-- Imagen del primer ítem con el atributo 'alt' para describir la imagen -->
+        </figure>
+        
+        <!-- Segundo ítem del carrusel -->
+        <figure class="carousel-item"> 
+            <!-- Segundo <figure> con la clase 'carousel-item' -->
+            <img src="./img/image2.jpg" alt="Imagen 2"> 
+            <!-- Imagen del segundo ítem con el atributo 'alt' -->
+        </figure>
+        
+        <!-- Tercer ítem del carrusel -->
+        <figure class="carousel-item"> 
+            <!-- Tercer <figure> con la clase 'carousel-item' -->
+            <img src="./img/image3.jpg" alt="Imagen 3"> 
+            <!-- Imagen del tercer ítem con el atributo 'alt' -->
+        </figure>
+    </figure>
+    
+    <!-- Botón de control para el slide anterior -->
+    <button class="carousel-control prev" onclick="prevSlide()"> 
+        <!-- Botón con la clase 'carousel-control' y 'prev'. 
+             El evento 'onclick' llama a la función 'prevSlide()' -->
+        &#10094; <!-- Caracter Unicode para la flecha izquierda -->
+    </button>
+    
+    <!-- Botón de control para el siguiente slide -->
+    <button class="carousel-control next" onclick="nextSlide()"> 
+        <!-- Botón con la clase 'carousel-control' y 'next'. 
+             El evento 'onclick' llama a la función 'nextSlide()' -->
+        &#10095; <!-- Caracter Unicode para la flecha derecha -->
+    </button>
+</section>
+
+<!-- Pie de página -->
+<footer> 
+    <!-- Contenedor del pie de página -->
+    <!--<p>Pie de página</p> -->
+    <!-- Texto dentro del pie de página -->
+</footer>
+
+<!-- Enlace al archivo JavaScript -->
+<script src="script.js"></script> 
+<!-- Incluye el archivo externo de JavaScript que contiene las funciones para el carrusel -->
+</body>
+</html>

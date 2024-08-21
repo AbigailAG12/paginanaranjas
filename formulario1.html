@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ofrecer educación superior">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style11.css">
+    <title>Las naranjas</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header_container">
+        <img src="./img/OIP.png" alt="Logo" class="header_image">
+        <h1 class="titulo">Las naranjas</h1>
+        <nav>
+            <ul class="header_nav">
+                <li class="header_nav_item"><a href="./index.php">Inicio</a></li>
+                <li class="header_nav_item"><a href="./historia.html">Historia</a></li>
+                <li class="header_nav_item"><a href="#">Formulario</a></li>
+                <li class="header_nav_item"><a href="./productos.html">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+<body>
+   
+ <!-- contenido principal -->
+ <body>
+        <div class="form-container">
+            <h2>Formulario de Registro</h2>
+            <form action="procesar_formulario.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+    
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </body>
